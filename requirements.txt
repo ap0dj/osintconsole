@@ -1,0 +1,16 @@
+# Core dependencies
+dnspython>=2.4.0
+python-whois>=0.9.4
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+urllib3>=2.0.0
+
+# Optional - enable extra features
+PySocks>=1.7.1                      # Tor / SOCKS proxy support (proxy tor)
+selenium>=4.15.0                    # High-quality screenshots (web/screenshot); falls back to thum.io if absent
+mmh3>=4.0.0                         # Correct Shodan favicon hash (web/favicon_hash)
+cryptography>=41.0.0                # Full SSL cert parsing incl. self-signed (web/ssl_analysis)
+Pillow>=10.0.0                      # EXIF extraction (harvest/image_metadata)
+pypdf>=4.0.0                        # Full PDF /Info + XMP parsing (harvest/metadata); regex fallback if absent
+phonenumbers>=8.13.0               # Offline carrier/line-type/region/timezone (harvest/phone_osint)
+pyreadline3>=3.4.1; sys_platform == "win32"  # Tab completion + history on Windows

@@ -1,0 +1,57 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Session/runtime
+osint.db
+osint.db-journal
+osint.db-wal
+osint.db-shm
+.osintconsole_history
+workspaces/
+results/
+
+# Secrets (user should keep local only)
+config.json
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build/test
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Corrupt-config backups
+*.broken
+
+# Personal network-recon artifacts (NOT part of the tool - keep private)
+*.ps1
+
+# graphify knowledge-graph build output (contains cached personal data)
+graphify-out/
+
+# Internal dev progress log (not user-facing)
+PROJECT_MEMORY.md
+
+# Runtime cache (regenerated on first use - OFAC sanctions list)
+data/ofac/
+
+# Keep local private markdown (notes/reports) out of the repo
+*.md
+!README.md
+
+# Tests are kept local, not shipped in the public repo
+tests/
